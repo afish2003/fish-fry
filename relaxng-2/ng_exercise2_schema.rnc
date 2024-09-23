@@ -1,0 +1,29 @@
+start = root
+root = element root {author,compDate,currLocation,p1,p2,p3,p4,p5,source}
+    author = element author{text}
+    compDate = compDate {text}
+    currLocation = currLocation {text}
+    p1 = element p1 {text}
+    p2 = element p2 {text}
+    p3 = element p3 {text}
+    p4 = element p4 {text}
+    p5 = element p5 {text}
+    source = source {text}
+
+p1 = element p1 {destnation, prevLocation, text}
+    destination = element destination {text}
+
+p3 = element p3 {currLocation, text}
+    currLocation = element currLocation {text}
+
+p4 = element p4 {destnation, text}
+    destination = element destination {text}
+
+p5 = element p5 {roomate, roomateSon, text}
+    roomate = element roomate {text}
+    roomateSon = element roomateSon {text}
+
+source = element source {pubDate, text}
+    pubDate = element pubDate {text}
+
+
