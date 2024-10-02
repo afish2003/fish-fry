@@ -44,44 +44,6 @@ body section.gallery {
     display:flex;
     flex-direction:row;
     }
-    
-body section.resume {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .contact-info a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        .section-title {
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-    </style>
 
 /* ebb: This is a comment in CSS: 
  * Notice that the properties I set on the <body> element get passed down to elements inside it. So all my text is the color and font that I set here. 
