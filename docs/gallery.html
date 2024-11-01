@@ -2,6 +2,184 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+        <style>
+* {
+	margin: 0;
+}
+
+body {
+margin: 0;
+background-color: pink;
+font-family: Georgia, serif;
+}
+
+div {
+  margin: 10px;
+}
+
+h1 {
+  color: white;
+  text-shadow: 0px 0px 4px #9e0057;
+  padding: 10px;
+  font-size: 60px;
+}
+
+h2 {
+  color: white;
+  text-shadow: 0px 0px 4px #9e0057;
+  padding: 10px;
+  font-size: 45px;
+}
+
+h3 {
+  color: white;
+  text-shadow: 0px 0px 4px #9e0057;
+  padding: 10px;
+  font-size: 40px;
+}
+
+h4 {
+  color: white;
+  text-shadow: 0px 0px 4px #9e0057;
+  padding: 10px;
+  font-size: 25px;
+}
+
+h5 {
+  color: white;
+  text-shadow: 0px 0px 4px #9e0057;
+  padding: 10px;
+  font-size: 20px;
+}
+
+h6 {
+  color: white;
+  text-shadow: 0px 0px 4px #9e0057;
+  padding: 10px;
+  font-size: 15px;
+}
+
+p {
+    padding: 20px;
+}
+
+a {
+  color: #ff028d;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: #98FBCB;
+}
+
+.active {
+  background-color: #98FBCB;
+}
+
+.section {
+	background-color: white;
+    padding: 0;
+    margin: 10px;
+}
+
+.section h1 {
+	color: black;
+    text-shadow: none;
+    padding: 10px 10px 0px 10px;
+    font-size: 40px;
+    font-variant: small-caps;
+}
+
+.section h2 {
+	color: black;
+    text-shadow: none;
+    padding: 10px 10px 0px 10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.section h3 {
+	color: black;
+    text-shadow: none;
+    padding: 10px 10px 0px 10px;
+    font-size: 25px;
+    }
+
+.section p {
+	padding: 10px 10px 10px 10px;
+}
+
+.section ul {
+}
+
+figure {
+background-color: white;
+padding: 15px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+max-width: 50%;
+box-shadow: 0px 0px 4px #9e0057;
+}
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-style: solid;
+border-width: 2px;
+border-color: grey;
+max-width: 100%;
+}
+
+figcaption {
+text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+}
+
+.flex-container h1 {
+  color: black;
+  text-shadow: none;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.flex-container figure {
+}
+
+.flex-container > div {
+  background-color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+    </style>
+        
+        
         <title>Fish-Fry</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,51 +191,58 @@
         
         <nav>
             <ul>
+                
+                <li><a href="index.html">Home</a></li>
                 <li><a class="active" href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li style="float:right"><a href="index.html">Home</a></li>
             </ul>
         </nav>
         
         <h1>
             Fish-Fry Website (Portfolio)
         </h1>
-            <figure>
-                <img src="images/fishFry.png"/>
-                <figcaption>ASCII Art used as the logo for my personal Git-Hub Repo "Fish-Fry" Click <a href="https://github.com/afish2003/fish-fry.git">HERE</a> to visit the repo</figcaption>
-            </figure> 
+        <figure>
+            <img src="images/fishFry.png"/>
+            <figcaption>ASCII Art used as the logo for my personal Git-Hub Repo "Fish-Fry" Click <a href="https://github.com/afish2003/fish-fry.git">HERE</a> to visit the repo</figcaption>
+        </figure> 
         
-        <h2>Click on an image to get more info and photos of the catagory!</h2>
-            <h3>Meehl Innovation Commons- Product Design Engineer &amp; Ceramic 3D Printing Specialist</h3>
-            <a href="commons.html">
-                <figure>
-                    <img src="images/fredFrog.jpeg" alt="clickable image"></img>
-                </figure>
-            </a>
-                
-        <h3>Penn State Behrend Theatre Department- Technical Director &amp; Lighting Designer</h3>
-            <a href="theatre.html">
-                <figure>
-                    <img src="images/theatreLogo.png" alt="clickable image"></img>
-                </figure>
-                
-            </a>
-
-        <h3>Penn State Behrend Club Involvement</h3>
-            <a href="ceramics.html">
-                <figure>
-                    <img src="images/bccLogo.png" alt="clickable image"></img>
-                </figure>
-            </a>
+        <h2>Click on an image to get more info and photos of the category!</h2>
         
-
-        <h3>Tone-Acious Acapella Club- Secretary and Instructor</h3>
-            <a href="toneAcious.html">
-                <figure>
-                    <img src="images/taLogo.png" alt="clickable image"></img>
-                </figure>
-            </a>
+        
+        <div class="flex-container">
+            <div>
+                <h1>Meehl Innovation Commons- Product Design Engineer &amp; Ceramic 3D Printing Specialist</h1>
+                <a href="commons.html">
+                    <figure>
+                        <img src="images/fredFrog.jpeg" alt="clickable image"/>
+                    </figure>
+                </a>
+            </div><div>
+                <h1>Penn State Behrend Theatre Department- Technical Director &amp; Lighting Designer</h1>
+                <a href="theatre.html">
+                    <figure>
+                        <img src="images/theatreLogo.png" alt="clickable image"/>
+                    </figure>
+                    
+                </a>
+            </div><div>
+                <h1>Penn State Behrend Club Involvement</h1>
+                <a href="ceramics.html">
+                    <figure>
+                        <img src="images/bccLogo.png" alt="clickable image"/>
+                    </figure>
+                </a>
+            </div>
+            <div>
+                <h1>Tone-Acious Acapella Club- Secretary and Instructor</h1>
+                <a href="toneAcious.html">
+                    <figure>
+                        <img src="images/taLogo.png" alt="clickable image"/>
+                    </figure>
+                </a>
+            </div>
+        </div>
         
     </body>
 </html>
