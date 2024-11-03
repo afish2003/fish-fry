@@ -156,27 +156,37 @@ text-align: center;
 }
 
 .flex-container {
-  display: flex;
-  justify-content: center;
-  background-color: DodgerBlue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
 }
 
-.flex-container h1 {
-  color: black;
-  text-shadow: none;
-  font-size: 20px;
-  padding: 0px;
+.flex-container > a {
+    text-decoration: none;
+    color: white;
+    border: 5px;
+    padding: 10% 1%;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #303030;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    opacity: 0.6;
+    text-shadow: -1px 1px 2px black, 
+1px 1px 2px black, 
+1px -1px 2px black, 
+-1px -1px 2px black;
+    transition: 0.5s;
 }
 
-.flex-container figure {
+.flex-container > a:hover {
+opacity: 1;
 }
 
-.flex-container > div {
-  background-color: white;
-  margin: 10px;
-  text-align: center;
-  line-height: 30px;
-}
     </style>
         
         
@@ -187,8 +197,6 @@ text-align: center;
     </head>
     
     <body>
-        
-        
         <nav>
             <ul>
                 
@@ -198,51 +206,34 @@ text-align: center;
                 <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
-        
-        <h1>
-            Fish-Fry Website (Portfolio)
-        </h1>
+        <h1> Fish-Fry Website (Portfolio) </h1>
         <figure>
-            <img src="images/fishFry.png"/>
-            <figcaption>ASCII Art used as the logo for my personal Git-Hub Repo "Fish-Fry" Click <a href="https://github.com/afish2003/fish-fry.git">HERE</a> to visit the repo</figcaption>
-        </figure> 
-        
+            <img src="images/fishFry.png" />
+            <figcaption>ASCII Art used as the logo for my personal Git-Hub Repo "Fish-Fry" Click <a
+                href="https://github.com/afish2003/fish-fry.git">HERE</a> to visit the
+                repo</figcaption>
+        </figure>
         <h2>Click on an image to get more info and photos of the category!</h2>
         
-        
         <div class="flex-container">
-            <div>
-                <h1>Meehl Innovation Commons- Product Design Engineer &amp; Ceramic 3D Printing Specialist</h1>
-                <a href="commons.html">
-                    <figure>
-                        <img src="images/fredFrog.jpeg" alt="clickable image"/>
-                    </figure>
-                </a>
-            </div><div>
-                <h1>Penn State Behrend Theatre Department- Technical Director &amp; Lighting Designer</h1>
-                <a href="theatre.html">
-                    <figure>
-                        <img src="images/theatreLogo.png" alt="clickable image"/>
-                    </figure>
-                    
-                </a>
-            </div><div>
-                <h1>Penn State Behrend Club Involvement</h1>
-                <a href="ceramics.html">
-                    <figure>
-                        <img src="images/bccLogo.png" alt="clickable image"/>
-                    </figure>
-                </a>
-            </div>
-            <div>
-                <h1>Tone-Acious Acapella Club- Secretary and Instructor</h1>
-                <a href="toneAcious.html">
-                    <figure>
-                        <img src="images/taLogo.png" alt="clickable image"/>
-                    </figure>
-                </a>
-            </div>
+            <a href="theatre.html"
+                style="flex-grow: 1; background-image: url('https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/theatreLogo.png'); background-position: 50%; background-size: cover"
+                >PSB Theatre Department</a>
+            <a href="commons.html"
+                style="flex-grow: 1; background-image: url('https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/fredFrog.jpeg'); background-position: 50%; background-size: cover"
+                >Meehl Innovation Commons</a>
+            <a href="ceramics.html"
+                style="flex-grow: 1; background-image: url('https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/bccLogo.png'); background-position: 50%; background-size: cover"
+                >Club Involvement</a>
+            <a href="coursework.html"
+                style="flex-grow: 1; background-image: url('https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/getShreked.jpg'); background-position: 50%; background-size: cover"
+                >Coursework</a>
+            
+            
         </div>
+        
+        
+        
         
     </body>
 </html>
