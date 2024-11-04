@@ -4,59 +4,60 @@
     <head>
         <style>
 * {
-	margin: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-margin: 0;
-background-color: pink;
-font-family: Georgia, serif;
+    margin: 0;
+    background-color: pink;
+    font-family: Georgia, serif;
 }
 
 div {
-  margin: 10px;
+    margin: 10px;
 }
 
 h1 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 60px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 60px;
 }
 
 h2 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 45px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 45px;
 }
 
 h3 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 40px;
 }
 
 h4 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 25px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 25px;
 }
 
 h5 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 20px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 20px;
 }
 
 h6 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 15px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 15px;
 }
 
 p {
@@ -64,45 +65,46 @@ p {
 }
 
 a {
-  color: #ff028d;
+    color: #ff028d;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
 }
 
 nav ul li {
-  float: left;
+    float: left;
 }
 
 nav ul li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 nav ul li a:hover:not(.active) {
-  background-color: #98FBCB;
+    background-color: #98FBCB;
 }
 
 .active {
-  background-color: #98FBCB;
+    background-color: #98FBCB;
 }
 
+
 .section {
-	background-color: white;
+    background-color: white;
     padding: 0;
     margin: 10px;
 }
 
 .section h1 {
-	color: black;
+    color: black;
     text-shadow: none;
     padding: 10px 10px 0px 10px;
     font-size: 40px;
@@ -110,7 +112,7 @@ nav ul li a:hover:not(.active) {
 }
 
 .section h2 {
-	color: black;
+    color: black;
     text-shadow: none;
     padding: 10px 10px 0px 10px;
     font-size: 30px;
@@ -118,41 +120,60 @@ nav ul li a:hover:not(.active) {
 }
 
 .section h3 {
-	color: black;
+    color: black;
     text-shadow: none;
     padding: 10px 10px 0px 10px;
     font-size: 25px;
-    }
+}
+
+.section h4 {
+color: black;
+    text-shadow: none;
+    padding: 10px 10px 0px 10px;
+    font-size: 20px;
+}
 
 .section p {
-	padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .section ul {
+    padding: 20px;
+}
+
+.section img {
+	width: 50%;
 }
 
 figure {
-background-color: white;
-padding: 15px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-max-width: 50%;
-box-shadow: 0px 0px 4px #9e0057;
+    background-color: white;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    box-shadow: 0px 0px 4px #9e0057;
 }
 
 img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-border-style: solid;
-border-width: 2px;
-border-color: grey;
-max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    max-width: 100%;
 }
 
 figcaption {
-text-align: center;
+    text-align: center;
+}
+
+#Iframe {
+    border-style: none;
+    padding: 10px;
+    width: 640px;
+    height: 300px;
 }
 
 .flex-container {
@@ -187,6 +208,49 @@ text-align: center;
 opacity: 1;
 }
 
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
     </style>
         
         
@@ -197,43 +261,84 @@ opacity: 1;
     </head>
     
     <body>
+        
+        
         <nav>
             <ul>
-                
                 <li><a href="index.html">Home</a></li>
                 <li><a class="active" href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
+                
             </ul>
         </nav>
-        <h1> Fish-Fry Website (Portfolio) </h1>
-        <figure>
-            <img src="images/fishFry.png" />
-            <figcaption>ASCII Art used as the logo for my personal Git-Hub Repo "Fish-Fry" Click <a
-                href="https://github.com/afish2003/fish-fry.git">HERE</a> to visit the
-                repo</figcaption>
-        </figure>
-        <h2>Click on an image to get more info and photos of the category!</h2>
         
-        <div class="flex-container">
-            <a href="theatre.html"
-                style="flex-grow: 1; background-image: url('https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/theatreLogo.png'); background-position: 50%; background-size: cover"
-                >PSB Theatre Department</a>
-            <a href="commons.html"
-                style="flex-grow: 1; background-image: url('https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/fredFrog.jpeg'); background-position: 50%; background-size: cover"
-                >Meehl Innovation Commons</a>
-            <a href="coursework.html"
-                style="flex-grow: 1; background-image: url('https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/psu.png'); background-position: 50%; background-size: cover"
-                >Coursework</a>
-            <!-- <a href="ceramics.html"
-                style="flex-grow: 1; background-image: url('https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/getShreked.jpg'); background-position: 50%; background-size: cover"
-                >Club Involvement</a> -->
+        <h1>
+            Fish-Fry Website (Portfolio)
+        </h1>
+        
+        <div class="section">
+            <h1>Penn State Behrend Theatre</h1>
+            <h3>Currently I am the Technical-Director and Lighting Designer for Penn State Behrends Theatre Department</h3>
+            <p>I am responsible for:</p>
+            <ul>
+                <li>Coordinating Rentals for Staging and Equiptment</li>
+                <li>Overseeing rental load in and setup</li>
+                <li>Designing the Stage and Seating Layouts</li>
+                <li>Designing the Lighting Plot</li>
+                <li>Programming all lighting cues and effects</li>
+                <li>Setting up lighting and sound equiptment</li>
+                <li>Interviewing and selecting tech and stage crew</li>
+                <li>Coordinating design of projections and backdrops</li>
+                <li>Troubleshooting anything that goes wrong during shows</li>
+            </ul>
+            <h4>Here are some photos/videos of some of the shows I've done while here at Behrend:</h4>
+            
+            <h2>Legally Blonde Spring 2024</h2>
+            
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/emptyFasen.jpeg">
+                        <img src="https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/emptyFasen.jpeg" alt="Room Before" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
             
             
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/lbSketch1.PNG">
+                        <img src="https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/lbSketch1.PNG" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+            
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_lights.jpg">
+                        <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+            
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_mountains.jpg">
+                        <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+            <div class="image-gallery">
+                <img style="flex-grow: 1;" src="https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/emptyFasen.jpeg" alt="Room before"/>
+                <img style="flex-grow: 1;" src="https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/lbSketch1.PNG" alt="Draft Sketch of Stage"/>
+                <img style="flex-grow: 1;" src="https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/lbSketch2.jpeg" alt="Draft Sketch for Lighting"/>
+                <img style="flex-grow: 1;" src="https://raw.githubusercontent.com/afish2003/fish-fry/refs/heads/main/docs/images/lbFX.MOV" alt="Video of Setup with FX"/>
+            </div>
         </div>
-        
-        
-        
         
     </body>
 </html>

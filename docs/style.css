@@ -1,57 +1,57 @@
 * {
-	margin: 0;
+    margin: 0;
 }
 
 body {
-margin: 0;
-background-color: pink;
-font-family: Georgia, serif;
+    margin: 0;
+    background-color: pink;
+    font-family: Georgia, serif;
 }
 
 div {
-  margin: 10px;
+    margin: 10px;
 }
 
 h1 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 60px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 60px;
 }
 
 h2 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 45px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 45px;
 }
 
 h3 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 40px;
 }
 
 h4 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 25px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 25px;
 }
 
 h5 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 20px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 20px;
 }
 
 h6 {
-  color: white;
-  text-shadow: 0px 0px 4px #9e0057;
-  padding: 10px;
-  font-size: 15px;
+    color: white;
+    text-shadow: 0px 0px 4px #9e0057;
+    padding: 10px;
+    font-size: 15px;
 }
 
 p {
@@ -59,45 +59,46 @@ p {
 }
 
 a {
-  color: #ff028d;
+    color: #ff028d;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
 }
 
 nav ul li {
-  float: left;
+    float: left;
 }
 
 nav ul li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 nav ul li a:hover:not(.active) {
-  background-color: #98FBCB;
+    background-color: #98FBCB;
 }
 
 .active {
-  background-color: #98FBCB;
+    background-color: #98FBCB;
 }
 
+
 .section {
-	background-color: white;
+    background-color: white;
     padding: 0;
     margin: 10px;
 }
 
 .section h1 {
-	color: black;
+    color: black;
     text-shadow: none;
     padding: 10px 10px 0px 10px;
     font-size: 40px;
@@ -105,7 +106,7 @@ nav ul li a:hover:not(.active) {
 }
 
 .section h2 {
-	color: black;
+    color: black;
     text-shadow: none;
     padding: 10px 10px 0px 10px;
     font-size: 30px;
@@ -113,39 +114,79 @@ nav ul li a:hover:not(.active) {
 }
 
 .section h3 {
-	color: black;
+    color: black;
     text-shadow: none;
     padding: 10px 10px 0px 10px;
     font-size: 25px;
-    }
+}
 
 .section p {
-	padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .section ul {
+    padding: 20px;
 }
 
 figure {
-background-color: white;
-padding: 15px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-max-width: 50%;
-box-shadow: 0px 0px 4px #9e0057;
+    background-color: white;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    box-shadow: 0px 0px 4px #9e0057;
 }
 
 img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-border-style: solid;
-border-width: 2px;
-border-color: grey;
-max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    max-width: 100%;
 }
 
 figcaption {
-text-align: center;
+    text-align: center;
+}
+
+#Iframe {
+    border-style: none;
+    padding: 10px;
+    width: 640px;
+    height: 300px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.flex-container > a {
+    text-decoration: none;
+    color: white;
+    border: 5px;
+    padding: 10% 1%;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #303030;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    opacity: 0.6;
+    text-shadow: -1px 1px 2px black, 
+1px 1px 2px black, 
+1px -1px 2px black, 
+-1px -1px 2px black;
+    transition: 0.5s;
+}
+
+.flex-container > a:hover {
+opacity: 1;
 }
