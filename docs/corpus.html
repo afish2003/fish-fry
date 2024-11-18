@@ -1,15 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Corpus Analysis</title>
+        <title>Fish-Fry</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
+    
     <body>
-        <p>Still working on finding good text versions of the three scripts: Cabaret, Wild Party, and Ride the Cyclone</p>
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        
+        <h1>
+           Corpus Analysis: A comparison of three texts
+        </h1>
+        <p>For this analysis I chose to analyse three theatre productions. I chose Moulin Rouge (circa. 1972), Cabaret (circa. 2001), and Ride the Cyclone (circa. 2008). I chose these three shows because they are from a nice spread of years and all share the same "cabaret" style.</p>
+        
+        <p>These shows will be analysed using two text analysis tools: Voyant and Antconc</p>
+        
+        <h3>Moulin Rouge</h3>
+        <p>View Script <a href="corpus/moulinRouge/moulinRouge.txt"> HERE</a> </p>
+        
+        <h5>Text Analysis with Voyant</h5>
+        <p>Below is the Wordcloud view provided by Voyants analysis services. I have omited all the character names, common filler words (I, am, we're, etc.) to make the word web more meaningful and helpful. The Wordcloud contains the top 100 words from the shows script.</p>
+        
         <div class="image-gallery">
-            <img src="images/emptyFasen.jpeg" alt="Room before"/>
-            <img src="images/lbSketch1.PNG" alt="Draft Sketch of Stage"/>
-            <img src="images/lbSketch2.jpeg" alt="Draft Sketch for Lighting"/>
-            <img src="images/lbFX.MOV" alt="Video of Setup with FX"/>
+            <figure><img src="corpus/moulinRouge/rougeCloud.png" alt="Moulin Rouge Word Cloud"/> <figcaption>WordCloud provided by Voyant</figcaption></figure>
         </div>
+        <p>To take a further look into my Voyant analysis click <a href="https://voyant-tools.org/?corpus=d01e9a685b90fea470f3b8e4e87b3804&amp;stopList=keywords-4ec2507a302e6a4ea316262e18aa2117&amp;whiteList=&amp;visible=100&amp;view=Cirrus">HERE</a> to be redirected to the voyant analysis.</p>
+        
+        
+        <h5>Text Analysis with Antconc</h5>
+        <div class="image-gallery">
+            <figure><img src="corpus/moulinRouge/rouge5.png" alt="Voyant Analysis with ngram size of 5 words"/> <figcaption>For my first antconc analysis I looked for ngrams with a 5 word size.</figcaption>           </figure>
+            <figure><img src="corpus/moulinRouge/rouge10.png" alt="Voyant Analysis with ngram size of 10 words"/><figcaption>For my second antconc analysis I looked for ngrams with a 10 word size.</figcaption></figure>
+            <figure><img src="corpus/moulinRouge/rouge15.png" alt="Voyant Analysis with ngram size of 15 words"/> <figcaption>For my third antconc analysis I looked for ngrams with a 20 word size.</figcaption></figure>
+            <figure><img src="corpus/moulinRouge/rouge20.png" alt="Voyant Analysis with ngram size of 20 words"/> <figcaption>For my fourth and final antconc analysis I looked for ngrams with a 20 word size.</figcaption></figure>
+        </div>
+        
+        <p>Overall this antconc analysis showed that this show is indeed a musical and a cabaret due to how it revealed the patterns of song lyrics spread across the show. </p>
+     
+     
+     
+     
+     
+        <h3>Cabaret</h3>
+        <p>View Script <a href="corpus/cabaret/cabaret.txt"> HERE</a> </p>
+        
+        <h5>Text Analysis with Voyant</h5>
+        <p>Below is the Wordcloud view provided by Voyants analysis services. I have once again omited all the character names, common filler words (I, am, we're, etc.) to make the word web more meaningful and helpful. The Wordcloud contains the top 100 words from the shows script.</p>
+        
+        <div class="image-gallery">
+            <figure><img src="corpus/cabaret/cabaretCloud.png" alt="Moulin Rouge Word Cloud"/> <figcaption>WordCloud provided by Voyant</figcaption></figure>
+        </div>
+        <p>To take a further look into my Voyant analysis click <a href="https://voyant-tools.org/?corpus=1db5002013b6657c6ec4381b586bf1df&amp;stopList=keywords-e4d9ad766a0ede3a0e4b7e5840490031&amp;whiteList=&amp;visible=100&amp;view=Cirrus">HERE</a> to be redirected to the voyant analysis.</p>
+        
+        
+        <h5>Text Analysis with Antconc</h5>
+        <div class="image-gallery">
+            <figure><img src="corpus/cabaret/cab5.png" alt="Voyant Analysis with ngram size of 5 words"/> <figcaption>For my first antconc analysis I looked for ngrams with a 5 word size.</figcaption>           </figure>
+            <figure><img src="corpus/cabaret/cab10.png" alt="Voyant Analysis with ngram size of 10 words"/><figcaption>For my second antconc analysis I looked for ngrams with a 10 word size.</figcaption></figure>
+            <figure><img src="corpus/cabaret/cab15.png" alt="Voyant Analysis with ngram size of 15 words"/> <figcaption>For my third antconc analysis I looked for ngrams with a 20 word size.</figcaption></figure>
+            <figure><img src="corpus/cabaret/cab20.png" alt="Voyant Analysis with ngram size of 20 words"/> <figcaption>For my fourth and final antconc analysis I looked for ngrams with a 20 word size.</figcaption></figure>
+        </div>
+        
+        <p>This analysis yeilded the same results as the Moulin Rouge and showed once again that this show is indeed a musical and a cabaret due to how it revealed the patterns of song lyrics spread across the show.</p>
+        
+        
+        <h3>Ride the Cyclone</h3>
+        <p>View Script <a href="corpus/rideTheCyclone/rideCyclone.txt"> HERE</a> </p>
+        
+        <h5>Text Analysis with Voyant</h5>
+        <p>Below is the Wordcloud view provided by Voyants analysis services. I have once again omited all the character names, common filler words (I, am, we're, etc.) to make the word web more meaningful and helpful. The Wordcloud contains the top 100 words from the shows script.</p>
+        
+        <div class="image-gallery">
+            <figure><img src="corpus/rideTheCyclone/cycloneCloud.png" alt="Moulin Rouge Word Cloud"/> <figcaption>WordCloud provided by Voyant</figcaption></figure>
+        </div>
+        <p>To take a further look into my Voyant analysis click <a href="https://voyant-tools.org/?corpus=a3d277065836a8bb091c84ef2cf6c3a1&amp;stopList=keywords-5670e1e9c5c140eafcfe6380d79de4db&amp;whiteList=&amp;visible=100&amp;view=Cirrus">HERE</a> to be redirected to the voyant analysis.</p>
+        
+        
+        <h5>Text Analysis with Antconc</h5>
+        <div class="image-gallery">
+            <figure><img src="corpus/rideTheCyclone/cyclone5.png" alt="Voyant Analysis with ngram size of 5 words"/> <figcaption>For my first antconc analysis I looked for ngrams with a 5 word size.</figcaption>           </figure>
+            <figure><img src="corpus/rideTheCyclone/cyclone10.png" alt="Voyant Analysis with ngram size of 10 words"/><figcaption>For my second antconc analysis I looked for ngrams with a 10 word size.</figcaption></figure>
+            <figure><img src="corpus/rideTheCyclone/cyclone15.png" alt="Voyant Analysis with ngram size of 15 words"/> <figcaption>For my third antconc analysis I looked for ngrams with a 20 word size.</figcaption></figure>
+            <figure><img src="corpus/rideTheCyclone/cyclone20.png" alt="Voyant Analysis with ngram size of 20 words"/> <figcaption>For my fourth and final antconc analysis I looked for ngrams with a 20 word size.</figcaption></figure>
+        </div>
+        
+        <p>This analysis yeilded the same results as the Moulin Rouge and Cabaret and it showed once again that this show is indeed a musical and a cabaret due to how it revealed the patterns of song lyrics spread across the show.</p>
+        
+        <p>After running all these scripts through Antconc I'm beginning to feel that maybe musicals are just not fit for these analysis tools due to music numbers having so much repetition which makes it hard to see any other patterns in the actual non music text. To supplement the above analysis I have composed a writers-critique style reflection comparing the three shows from my own perspective.</p>
+    
+    
+    <h4>Side by Side Comparison</h4>
+        <p>Now I'm going to provide a actual comparison side by side of all of these shows. As a student studying theatre I feel I am qualified to speak on these shows having done two out of the three.</p>
+        
+        <p>Moulin Rouge!, Cabaret, and Ride the Cyclone are three very different musicals, but they share a lot of common ground in terms of their style, themes, and structure. Each show explores dark or tragic elements of life, often mixing them with moments of humor and fantasy. Although the settings and time periods differ, they all delve into the complexities of human desire, society, and identity.</p>
+        
+        <p>Moulin Rouge! is set in 1899 Paris at the famous Moulin Rouge nightclub, where a mix of romance, excess, and artistic freedom comes together. The musical has a high-energy vibe, with an eclectic mix of popular songs reinterpreted for the stage. The use of contemporary songs helps convey the bohemian atmosphere and the tragic love story at the heart of the show. There’s a sense of surrealism, especially with the way the music and choreography blend the past and present in unexpected ways.</p>
+        
+        <p>In contrast, Cabaret takes place in 1930s Berlin at the Kit Kat Klub during the rise of the Nazi regime. The musical is darker and more cynical, focusing on the breakdown of moral values in a society on the brink of change. It uses traditional musical theater elements but combines them with the dark tones of German Expressionism, especially in the way it shows how the club acts as a microcosm of the larger world outside. The show’s atmosphere is filled with a sense of foreboding, where the freedom of the cabaret contrasts with the increasing danger and political instability.</p>
+        
+        <p>Ride the Cyclone is perhaps the most unusual of the three, set in a small Canadian town after a tragic rollercoaster accident. The show mixes humor with elements of horror and fantasy, and it’s filled with whimsical characters who reflect on life, death, and fate. The music is a mix of different genres, from pop to show tunes, which creates a quirky, unpredictable feeling. The musical style fits the bizarre and tragic premise, with each character offering a unique perspective on their own life and death.</p>
+        
+        <p>All three shows explore similar themes of human desire, loss, and identity, often through a lens of excess or darkness. They blend moments of humor and lightness with serious, sometimes tragic, subject matter. The structure of each musical also keeps the audience engaged through a mixture of fantasy and reality. Whether it’s the high-energy romance of Moulin Rouge!, the dark political undertones of Cabaret, or the quirky, surreal atmosphere of Ride the Cyclone, each musical uses its composition style to highlight the tension between fantasy and real-life consequences.</p>
     </body>
 </html>

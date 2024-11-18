@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -120,12 +121,23 @@ nav ul li a:hover:not(.active) {
     font-size: 25px;
 }
 
+.section h4 {
+color: black;
+    text-shadow: none;
+    padding: 10px 10px 0px 10px;
+    font-size: 20px;
+}
+
 .section p {
     padding: 10px 10px 10px 10px;
 }
 
 .section ul {
     padding: 20px;
+}
+
+.section img {
+	width: 50%;
 }
 
 figure {
@@ -149,10 +161,7 @@ img {
 }
 
 figcaption {
-    figcaption {
     text-align: center;
-    font-size: 14px;
-    color: #333;
 }
 
 #Iframe {
@@ -162,12 +171,6 @@ figcaption {
     height: 300px;
 }
 
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -199,3 +202,46 @@ figcaption {
 .flex-container > a:hover {
 opacity: 1;
 }
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
