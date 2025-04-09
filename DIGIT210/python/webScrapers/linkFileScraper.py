@@ -7,8 +7,8 @@ import requests
 import os
 
 # ebb: This variable stores the website address that you want to scrape.
-archive_url = "https://queerworm.github.io/transcripts/bojack/"
-
+#archive_url = "https://queerworm.github.io/transcripts/bojack/"
+archive_url = "http://www.textfiles.com/drugs/"
 def get_files():
     # create response object
     r = requests.get(archive_url)
@@ -17,7 +17,7 @@ def get_files():
     soup = bs4.BeautifulSoup(r.content, 'html.parser')
 
     # find all links on web-page
-    for item in soup.select('a[href$=html]'):
+    for item in soup.select('a[href$=txt]'):
         href = archive_url + item['href']
         download_links(href)
     print("All tales downloaded!")
@@ -35,7 +35,7 @@ def download_links(href):
 
     workingDir = os.getcwd()
     print("current working directory: " + workingDir)
-    fileDeposit = os.path.join(workingDir, 'bojack', file_name)
+    fileDeposit = os.path.join(workingDir, 'drugz', file_name)
     print(fileDeposit)
 
 
