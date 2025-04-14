@@ -9,17 +9,15 @@ from urllib import request
 # The following import lines are for plotting interactive visualizations in Python
 import matplotlib
 import matplotlib.pyplot as plt
-import tkinter as tk
+import tk
 
-plt.plot(range(10))
+plt.plot(range(20))
 plt.show()
-### See how these words are dispersed in NLTK text 1 (Moby Dick)
-words = ["whale", "sea", "ship", "captain"]
-nltk.draw.dispersion_plot(text1, words)
+### See how these words are dispersed (I changed to search Monty Python!)
+words = ["ni", "grail", "king", "no"]
+nltk.draw.dispersion_plot(text6, words)
 plt.show()
 # Another dispersion plot written closer to the NLTK example:
-# Choose the text first (text 4 is Inaugural Addresses):
-text4.dispersion_plot(["citizens", "democracy", "freedom", "duties", "America"])
+# Choose the text first (I edited this to search the book of genesis)
+text3.dispersion_plot(["he", "thy", "thine", "who", "father"])
 plt.show()
-
-text6.common_contexts(["find","seek"])
