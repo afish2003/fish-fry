@@ -1,0 +1,178 @@
+
+--- Analysis of all_song_analysis.txt ---
+
+Most Common Chords:
+
+Most Common Words (excluding filler words):
+
+--- Analysis of song-8.txt ---
+
+Most Common Chords:
+C: 38
+D: 36
+Em: 16
+G: 16
+Bm: 14
+Am: 9
+B: 8
+A: 2
+
+Most Common Words (excluding filler words):
+stand: 9
+up: 8
+cold: 8
+black: 5
+smoke: 5
+fires: 5
+will: 5
+rises: 4
+been: 4
+told: 4
+
+--- Analysis of song-2.txt ---
+
+Most Common Chords:
+A: 36
+D: 36
+G: 20
+F#: 18
+E: 6
+Am: 6
+
+Most Common Words (excluding filler words):
+my: 11
+love: 8
+bleeding: 7
+got: 6
+heart: 6
+army: 6
+apart: 6
+all: 5
+brothers: 5
+stand: 5
+
+--- Analysis of song-3.txt ---
+
+Most Common Chords:
+A: 55
+D: 50
+G: 21
+F: 2
+
+Most Common Words (excluding filler words):
+ma: 52
+outta: 7
+sight: 7
+alright: 6
+our: 4
+verse: 3
+day: 3
+love: 3
+night: 3
+are: 3
+
+--- Analysis of song-1.txt ---
+
+Most Common Chords:
+A: 42
+G: 42
+D: 42
+
+Most Common Words (excluding filler words):
+your: 22
+mama: 18
+heart: 14
+do: 13
+love: 12
+when: 9
+all: 9
+gon: 8
+give: 7
+wo: 6
+
+--- Analysis of song-4.txt ---
+
+Most Common Chords:
+Am: 18
+Dm: 12
+F: 9
+E: 9
+C: 9
+A: 7
+G: 1
+
+Most Common Words (excluding filler words):
+long: 11
+been: 8
+know: 6
+change: 5
+gon: 5
+come: 5
+time: 5
+coming: 5
+verse: 3
+chorus: 3
+
+--- Analysis of song-5.txt ---
+
+Most Common Chords:
+E: 8
+A: 3
+B: 3
+
+Most Common Words (excluding filler words):
+my: 22
+girl: 4
+special: 4
+midnight: 4
+no: 3
+because: 3
+want: 3
+are: 3
+chorus: 3
+sweet: 3
+
+--- Analysis of song-7.txt ---
+
+Most Common Chords:
+E: 42
+F#: 41
+G#m: 32
+C#: 23
+B: 17
+Em: 1
+
+Most Common Words (excluding filler words):
+f: 16
+talking: 8
+there: 6
+them: 6
+know: 5
+yes: 5
+never: 4
+let: 4
+everyone: 4
+me: 4
+
+--- Analysis of song-6.txt ---
+
+Most Common Chords:
+C: 29
+Bb: 14
+F: 14
+Dm: 10
+Gm: 8
+Am: 5
+G: 5
+
+Most Common Words (excluding filler words):
+ledge: 16
+meet: 15
+all: 9
+gon: 8
+my: 6
+again: 5
+up: 4
+friends: 4
+see: 4
+comes: 4
