@@ -1,0 +1,60 @@
+
+--- all_song_analysis.txt ---
+yeah - Frequency: 0, Synset meanings: 1
+is - Frequency: 0, Synset meanings: 13
+was - Frequency: 0, Synset meanings: 14
+we - Frequency: 0, Synset meanings: 0
+
+--- song-8.txt ---
+yeah - Frequency: 0, Synset meanings: 1
+is - Frequency: 3, Synset meanings: 13
+was - Frequency: 1, Synset meanings: 14
+we - Frequency: 9, Synset meanings: 0
+
+--- wordnet_target_word_ambiguity.txt ---
+yeah - Frequency: 0, Synset meanings: 1
+is - Frequency: 0, Synset meanings: 13
+was - Frequency: 0, Synset meanings: 14
+we - Frequency: 0, Synset meanings: 0
+
+--- song-2.txt ---
+yeah - Frequency: 0, Synset meanings: 1
+is - Frequency: 6, Synset meanings: 13
+was - Frequency: 0, Synset meanings: 14
+we - Frequency: 7, Synset meanings: 0
+
+--- song-3.txt ---
+yeah - Frequency: 10, Synset meanings: 1
+is - Frequency: 2, Synset meanings: 13
+was - Frequency: 0, Synset meanings: 14
+we - Frequency: 1, Synset meanings: 0
+
+--- song-1.txt ---
+yeah - Frequency: 2, Synset meanings: 1
+is - Frequency: 2, Synset meanings: 13
+was - Frequency: 0, Synset meanings: 14
+we - Frequency: 0, Synset meanings: 0
+
+--- song-4.txt ---
+yeah - Frequency: 0, Synset meanings: 1
+is - Frequency: 4, Synset meanings: 13
+was - Frequency: 1, Synset meanings: 14
+we - Frequency: 0, Synset meanings: 0
+
+--- song-5.txt ---
+yeah - Frequency: 3, Synset meanings: 1
+is - Frequency: 3, Synset meanings: 13
+was - Frequency: 0, Synset meanings: 14
+we - Frequency: 0, Synset meanings: 0
+
+--- song-7.txt ---
+yeah - Frequency: 0, Synset meanings: 1
+is - Frequency: 3, Synset meanings: 13
+was - Frequency: 0, Synset meanings: 14
+we - Frequency: 0, Synset meanings: 0
+
+--- song-6.txt ---
+yeah - Frequency: 0, Synset meanings: 1
+is - Frequency: 5, Synset meanings: 13
+was - Frequency: 0, Synset meanings: 14
+we - Frequency: 10, Synset meanings: 0
