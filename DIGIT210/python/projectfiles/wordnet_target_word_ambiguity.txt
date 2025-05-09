@@ -1,60 +1,70 @@
 
 --- all_song_analysis.txt ---
-yeah - Frequency: 0, Synset meanings: 1
-is - Frequency: 0, Synset meanings: 13
-was - Frequency: 0, Synset meanings: 14
-we - Frequency: 0, Synset meanings: 0
+know - Frequency: 2, Synset meanings (POS: n): 1
+love - Frequency: 3, Synset meanings (POS: n): 6
+soul - Frequency: 0, Synset meanings (POS: any): 5
+skies - Frequency: 0, Synset meanings (POS: any): 3
+visions - Frequency: 0, Synset meanings (POS: any): 5
 
 --- song-8.txt ---
-yeah - Frequency: 0, Synset meanings: 1
-is - Frequency: 3, Synset meanings: 13
-was - Frequency: 1, Synset meanings: 14
-we - Frequency: 9, Synset meanings: 0
+know - Frequency: 1, Synset meanings (POS: v): 11
+love - Frequency: 0, Synset meanings (POS: any): 10
+soul - Frequency: 0, Synset meanings (POS: any): 5
+skies - Frequency: 0, Synset meanings (POS: any): 3
+visions - Frequency: 0, Synset meanings (POS: any): 5
 
 --- wordnet_target_word_ambiguity.txt ---
-yeah - Frequency: 0, Synset meanings: 1
-is - Frequency: 0, Synset meanings: 13
-was - Frequency: 0, Synset meanings: 14
-we - Frequency: 0, Synset meanings: 0
+know - Frequency: 0, Synset meanings (POS: any): 12
+love - Frequency: 0, Synset meanings (POS: any): 10
+soul - Frequency: 0, Synset meanings (POS: any): 5
+skies - Frequency: 0, Synset meanings (POS: any): 3
+visions - Frequency: 0, Synset meanings (POS: any): 5
 
 --- song-2.txt ---
-yeah - Frequency: 0, Synset meanings: 1
-is - Frequency: 6, Synset meanings: 13
-was - Frequency: 0, Synset meanings: 14
-we - Frequency: 7, Synset meanings: 0
+know - Frequency: 0, Synset meanings (POS: any): 12
+love - Frequency: 8, Synset meanings (POS: v): 4
+soul - Frequency: 0, Synset meanings (POS: any): 5
+skies - Frequency: 0, Synset meanings (POS: any): 3
+visions - Frequency: 0, Synset meanings (POS: any): 5
 
 --- song-3.txt ---
-yeah - Frequency: 10, Synset meanings: 1
-is - Frequency: 2, Synset meanings: 13
-was - Frequency: 0, Synset meanings: 14
-we - Frequency: 1, Synset meanings: 0
+know - Frequency: 0, Synset meanings (POS: any): 12
+love - Frequency: 3, Synset meanings (POS: n): 6
+soul - Frequency: 0, Synset meanings (POS: any): 5
+skies - Frequency: 0, Synset meanings (POS: any): 3
+visions - Frequency: 0, Synset meanings (POS: any): 5
 
 --- song-1.txt ---
-yeah - Frequency: 2, Synset meanings: 1
-is - Frequency: 2, Synset meanings: 13
-was - Frequency: 0, Synset meanings: 14
-we - Frequency: 0, Synset meanings: 0
+know - Frequency: 1, Synset meanings (POS: v): 11
+love - Frequency: 12, Synset meanings (POS: n): 6
+soul - Frequency: 0, Synset meanings (POS: any): 5
+skies - Frequency: 0, Synset meanings (POS: any): 3
+visions - Frequency: 0, Synset meanings (POS: any): 5
 
 --- song-4.txt ---
-yeah - Frequency: 0, Synset meanings: 1
-is - Frequency: 4, Synset meanings: 13
-was - Frequency: 1, Synset meanings: 14
-we - Frequency: 0, Synset meanings: 0
+know - Frequency: 6, Synset meanings (POS: v): 11
+love - Frequency: 0, Synset meanings (POS: any): 10
+soul - Frequency: 0, Synset meanings (POS: any): 5
+skies - Frequency: 0, Synset meanings (POS: any): 3
+visions - Frequency: 0, Synset meanings (POS: any): 5
 
 --- song-5.txt ---
-yeah - Frequency: 3, Synset meanings: 1
-is - Frequency: 3, Synset meanings: 13
-was - Frequency: 0, Synset meanings: 14
-we - Frequency: 0, Synset meanings: 0
+know - Frequency: 1, Synset meanings (POS: v): 11
+love - Frequency: 0, Synset meanings (POS: any): 10
+soul - Frequency: 0, Synset meanings (POS: any): 5
+skies - Frequency: 0, Synset meanings (POS: any): 3
+visions - Frequency: 0, Synset meanings (POS: any): 5
 
 --- song-7.txt ---
-yeah - Frequency: 0, Synset meanings: 1
-is - Frequency: 3, Synset meanings: 13
-was - Frequency: 0, Synset meanings: 14
-we - Frequency: 0, Synset meanings: 0
+know - Frequency: 5, Synset meanings (POS: v): 11
+love - Frequency: 0, Synset meanings (POS: any): 10
+soul - Frequency: 0, Synset meanings (POS: any): 5
+skies - Frequency: 0, Synset meanings (POS: any): 3
+visions - Frequency: 0, Synset meanings (POS: any): 5
 
 --- song-6.txt ---
-yeah - Frequency: 0, Synset meanings: 1
-is - Frequency: 5, Synset meanings: 13
-was - Frequency: 0, Synset meanings: 14
-we - Frequency: 10, Synset meanings: 0
+know - Frequency: 0, Synset meanings (POS: any): 12
+love - Frequency: 0, Synset meanings (POS: any): 10
+soul - Frequency: 0, Synset meanings (POS: any): 5
+skies - Frequency: 0, Synset meanings (POS: any): 3
+visions - Frequency: 0, Synset meanings (POS: any): 5
