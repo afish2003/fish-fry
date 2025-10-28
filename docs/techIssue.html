@@ -25,7 +25,138 @@
   Tech Issue: Small Scale RAG Augmented Localized AI Models
 </h1>
 
-<p>For this tech issue I have chosen to create a guide on how to build your own catered personalized AI. This will include creating RAG Dataset and linking that into a small scale AI model thats cabable of running on the standard laptop</p>
+<h2>Why Build a Personalized RAG-Augmented AI?</h2>
+
+<p>
+  A <strong>personalized Retrieval-Augmented Generation (RAG)</strong> system lets you build an AI assistant that
+  actually understands <strong>your</strong> work — not the entire internet.
+  Instead of relying on cloud-based models that train on billions of unrelated documents,
+  a personalized RAG uses only the data you choose: your research papers, project files,
+  emails, meeting notes, or creative drafts.
+</p>
+
+<h3>1. Privacy and Data Ownership</h3>
+<p>
+  Running your AI locally means your private documents never leave your device.
+  No uploads, no third-party data collection, and no vendor lock-in.
+  You control what data goes in and what the model can access.
+</p>
+
+<h3>2. Context That Actually Fits You</h3>
+<p>
+  Public LLMs are trained to answer general questions for everyone.
+  A localized RAG can specialize — it “reads” your chosen materials first,
+  then generates responses using only those sources.
+  This makes it ideal for research teams, small businesses, students, and artists who
+  need <strong>accuracy, not popularity</strong>.
+</p>
+
+<h3>3. Reduced Environmental Impact</h3>
+<p>
+  Running smaller, domain-specific models on local hardware greatly lowers the
+  environmental footprint compared to large cloud APIs.
+  Each API call to a massive hosted LLM consumes energy across data centers and network routes.
+  A localized RAG runs efficiently on your CPU or GPU, using only the power you already draw.
+</p>
+
+<p>
+  By building once and reusing embeddings and indexes, you avoid repeated
+  computation — reducing electricity use and carbon cost over time.
+  Sustainable AI isn’t only about model size; it’s about <strong>where and how</strong> the model runs.
+</p>
+
+<h3>4. Flexibility and Independence</h3>
+<p>
+  A self-built RAG is modular. You can swap out components whenever you like:
+  embedding models, language models, vector stores, or even the retrieval logic itself.
+  This makes it future-proof — no dependency on a single platform or vendor.
+</p>
+
+<h3>5. A Learning Opportunity</h3>
+<p>
+  Building your own system gives you a clear window into how modern AI actually works.
+  It demystifies the black box and helps you understand what retrieval, embeddings, and
+  generation really do.
+  That knowledge is valuable for anyone working in digital media, research, or technology.
+</p>
+
+<hr>
+
+<h2>What This Guide Covers</h2>
+<p>
+  In the next sections, you’ll walk through a full local build — from raw files to a working AI assistant:
+</p>
+
+<ol>
+  <li><strong>Select an Embedding Model</strong> — how to represent your data as vectors.</li>
+  <li><strong>Select a Language Model (LLM)</strong> — how to generate answers from retrieved content.</li>
+  <li><strong>Integrate Everything</strong> — connect embeddings, vector store, and model into a functional RAG.</li>
+  <li><strong>Run Queries and Refine</strong> — interact with your AI, test accuracy, and tune performance.</li>
+</ol>
+
+<p>
+  By the end, you’ll understand how to build a self-contained, energy-efficient AI system that
+  learns from your data and lives entirely on your own hardware.
+</p>
+
+<h2>Overview: How a RAG System Works</h2>
+
+<h3>Step 1: Collect and Prepare Your Data</h3>
+<h3>Step 2: Create Embeddings for Text</h3>
+<h3>Step 3: Store Embeddings in a Vector Database</h3>
+<h3>Step 4: Retrieve Relevant Chunks When You Ask a Question</h3>
+<h3>Step 5: Generate an Answer Using a Language Model</h3>
+
+<hr>
+
+<h2>Understanding Each Piece</h2>
+
+<h3>What Is an Embedding Model?</h3>
+<h3>What Is a Vector Store?</h3>
+<h3>What Is a Language Model (LLM)?</h3>
+<h3>How Retrieval and Generation Work Together</h3>
+
+<hr>
+
+<h2>Choosing Your Tools</h2>
+
+<h3>Selecting an Embedding Model</h3>
+<h3>Selecting a Vector Store</h3>
+<h3>Selecting a Local or Open-Source LLM</h3>
+
+<hr>
+
+<h2>Building Your RAG Step-by-Step</h2>
+
+<h3>1. Organize Your Documents</h3>
+<h3>2. Split Text into Chunks</h3>
+<h3>3. Generate Embeddings</h3>
+<h3>4. Create and Save the Index</h3>
+<h3>5. Retrieve and Rank the Most Relevant Chunks</h3>
+<h3>6. Prompt the LLM with Retrieved Context</h3>
+<h3>7. Generate and Display the Answer</h3>
+
+<hr>
+
+<h2>Improving and Maintaining Your System</h2>
+
+<h3>Keeping Embeddings Up to Date</h3>
+<h3>Evaluating Accuracy and Relevance</h3>
+<h3>Optimizing Performance and Speed</h3>
+<h3>Running Efficiently to Reduce Power Use</h3>
+
+<hr>
+
+<h2>Next Steps</h2>
+
+<h3>Expanding to New Data Sources</h3>
+<h3>Experimenting with Different Models</h3>
+<h3>Building a Simple Interface</h3>
+<h3>Sharing Your Results and Learnings</h3>
+
+
+
+
 </body>
 
 
