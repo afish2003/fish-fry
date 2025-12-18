@@ -31,7 +31,7 @@
   Tech Issue: Small Scale RAG-Augmented Localized AI Models — An Analytical Overview
 </h1>
 
-<h2>Why Build a Personalized RAG-Augmented AI?</h2>
+<h2 id="background">Why Build a Personalized RAG-Augmented AI?</h2>
 
 <p>
   A <strong>personalized Retrieval-Augmented Generation (RAG)</strong> system gives you an AI assistant that focuses on your specific work rather than the entire internet. Instead of relying on cloud models trained on billions of broad documents, a personalized RAG system uses only the sources you select—research papers, documentation, transcripts, or creative drafts.[3][5][6]
@@ -84,9 +84,9 @@
 
 <figure>
   <img src="images/localVsCloudAI.png"
-       alt="Diagram comparing localized AI systems running on local hardware with cloud-based AI services running on remote servers" />
+       alt="Comparison diagram contrasting localized AI systems running on user-controlled hardware with cloud-based AI services operating on remote servers, highlighting differences in data control and infrastructure." />
   <figcaption>
-    Conceptual comparison between localized RAG systems and cloud-based AI services, highlighting differences in data control, infrastructure, and sustainability.
+    Localized RAG systems contrasted with cloud-based AI services.
   </figcaption>
 </figure>
 
@@ -149,9 +149,9 @@
 
 <figure>
   <img src="images/localRAGStack.png"
-       alt="Diagram showing a typical local RAG stack from documents to embeddings, vector store, RAG pipeline, and user interaction" />
+       alt="Diagram showing a typical local RAG system stack, from local documents through embedding models and a vector store to a retrieval pipeline that supports user interaction." />
   <figcaption>
-    Typical local RAG system stack, showing how documents are embedded, stored, retrieved, and used to support user interaction in a personalized AI workflow.
+    Typical component stack for a local RAG system.
   </figcaption>
 </figure>
 
@@ -189,9 +189,9 @@
 
 <figure>
   <img src="images/ragWorkflowDiagram.png"
-       alt="Diagram showing a retrieval-augmented generation workflow with user query, retriever, vector database, language model, and final response" />
+       alt="Retrieval-augmented generation workflow showing a user query sent to a retriever, matched against a vector database of embedded documents, and passed to a language model to generate a grounded response." />
   <figcaption>
-    Simplified retrieval-augmented generation (RAG) workflow illustrating how a user query retrieves relevant context from a vector database before a language model generates a grounded response.
+    High-level overview of a retrieval-augmented generation (RAG) workflow.
   </figcaption>
 </figure>
 
@@ -463,7 +463,11 @@ FAISS Flat performs exact search and is ideal for small–medium local datasets.
 </p>
 
 <div class="summary-box">
-  <strong>Summary:</strong> A RAG system works by preparing clean data,‬
+  <strong>Summary:</strong>
+  A RAG system works by preparing clean data, generating embeddings,
+  storing them efficiently, retrieving relevant context, and prompting
+  a language model to generate grounded, domain-accurate responses.
+</div>
 
 <h2>Improving and Maintaining Your System</h2>
 
@@ -527,6 +531,15 @@ FAISS Flat performs exact search and is ideal for small–medium local datasets.
 <p>
   The Zotero library is maintained as a living collection and may be updated
   as new research and tools emerge.
+</p>
+<p class="note">
+  All diagrams in this guide were created by the author to illustrate
+  localized retrieval-augmented generation workflows and system architectures.
+</p>
+<p class="note">
+  This guide was developed through a combination of independent research,
+  iterative drafting, and selective AI-assisted editing, with all content
+  reviewed and revised by the author.
 </p>
 
 <h2>Bibliography</h2>
