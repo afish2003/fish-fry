@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<?xml-stylesheet type="text/css" href="style.css"?>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html lang="en">
+
 <head>
-  <title>Fish-Fry</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Tech Issue Resource Guide</title>
+  <link rel="stylesheet" href="techIssue.css">
 </head>
 
 <body>
@@ -21,150 +19,515 @@
   </ul>
 </nav>
 
+<nav>
+  <ul>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#critique">Critique</a></li>
+    <li><a href="#bibliography">Works Cited</a></li>
+  </ul>
+</nav>
+
 <h1>
-  Tech Issue: Small Scale RAG Augmented Localized AI Models
+  Tech Issue: Small Scale RAG-Augmented Localized AI Models — An Analytical Overview
 </h1>
 
 <h2>Why Build a Personalized RAG-Augmented AI?</h2>
 
 <p>
-  A <strong>personalized Retrieval-Augmented Generation (RAG)</strong> system lets you build an AI assistant that
-  actually understands <strong>your</strong> work — not the entire internet.
-  Instead of relying on cloud-based models that train on billions of unrelated documents,
-  a personalized RAG uses only the data you choose: your research papers, project files,
-  emails, meeting notes, or creative drafts.
+  A <strong>personalized Retrieval-Augmented Generation (RAG)</strong> system gives you an AI assistant that focuses on your specific work rather than the entire internet. Instead of relying on cloud models trained on billions of broad documents, a personalized RAG system uses only the sources you select—research papers, documentation, transcripts, or creative drafts.[3][5][6]
 </p>
+
+<div class="callout">
+  <strong>Why this matters:</strong> Localized RAG systems let individuals curate exactly what the model “knows,” keeping the system relevant, predictable, and aligned with their domain.
+</div>
+
+<div class="callout">
+  <strong>Looking for sources?</strong>
+  All readings referenced in this guide are organized in a
+  <a href="https://www.zotero.org/groups/6240153/digitai_v2/library" target="_blank" rel="noopener">
+    public Zotero library
+  </a>
+  for easy access and further exploration.
+</div>
 
 <h3>1. Privacy and Data Ownership</h3>
 <p>
-  Running your AI locally means your private documents never leave your device.
-  No uploads, no third-party data collection, and no vendor lock-in.
-  You control what data goes in and what the model can access.
+  Running the system on your own hardware ensures that sensitive material never leaves your device. No external uploads, no vendor data collection, and no reliance on third-party APIs.[14] This gives you complete control over how your documents and models are stored and used.
 </p>
 
-<h3>2. Context That Actually Fits You</h3>
+<h3>2. Context That Fits Your Work</h3>
 <p>
-  Public LLMs are trained to answer general questions for everyone.
-  A localized RAG can specialize — it “reads” your chosen materials first,
-  then generates responses using only those sources.
-  This makes it ideal for research teams, small businesses, students, and artists who
-  need <strong>accuracy, not popularity</strong>.
+  Public LLMs are designed for broad audiences. A localized RAG system reads only the documents you choose and generates answers grounded in those sources. The result is precise, domain-specific output rather than generalized responses.[3][10][12]
 </p>
 
 <h3>3. Reduced Environmental Impact</h3>
 <p>
-  Running smaller, domain-specific models on local hardware greatly lowers the
-  environmental footprint compared to large cloud APIs.
-  Each API call to a massive hosted LLM consumes energy across data centers and network routes.
-  A localized RAG runs efficiently on your CPU or GPU, using only the power you already draw.
+  Small local models use significantly less energy than large cloud-hosted models.[14] Each cloud request activates remote servers and network resources, while local models run on power your computer already draws. Reusing embeddings and a saved index further reduces unnecessary recomputation and long-term energy use.[3]
+</p>
+
+<div class="summary-box">
+  <strong>Key takeaway:</strong> Personal RAG systems offer privacy, relevance, and sustainability while giving users full control over their AI’s knowledge and behavior.
+</div>
+
+<h2>The Role of Local AI in a Balanced AI Ecosystem</h2>
+<p>
+  Small‑scale localized AI models raise important technological and societal questions, making them a meaningful contemporary tech issue. As AI becomes woven into education, research, creative work, and daily tasks, most people rely on cloud‑based systems that require constant data sharing. Localized RAG systems challenge this pattern by giving individuals direct control over computation, storage, and the knowledge their AI relies on. This shift encourages users to think critically about how AI systems are built, configured, and aligned with personal or project‑specific needs.
 </p>
 
 <p>
-  By building once and reusing embeddings and indexes, you avoid repeated
-  computation — reducing electricity use and carbon cost over time.
-  Sustainable AI isn’t only about model size; it’s about <strong>where and how</strong> the model runs.
+  The move toward personal, user‑controlled AI has broader implications. It redistributes agency by allowing individuals—not only large companies—to shape how AI supports their work. At the same time, it introduces new responsibilities: users must understand system limitations, maintain their own setups, and ensure their data is handled ethically. Growing interest in localized AI also pushes discussions about sustainability forward, especially as people look for alternatives to energy‑intensive models running in large data centers.
 </p>
 
-<h3>4. Flexibility and Independence</h3>
 <p>
-  A self-built RAG is modular. You can swap out components whenever you like:
-  embedding models, language models, vector stores, or even the retrieval logic itself.
-  This makes it future-proof — no dependency on a single platform or vendor.
+  Importantly, localized AI is not a replacement for large foundation models. Cloud systems still offer unmatched scale, multilingual reach, and general-purpose reasoning. The real issue is how these large systems should operate: with stronger privacy protections, clearer data practices, and sustainable resource usage. Concerns such as data centers operating in drought-prone regions illustrate why these questions matter. Localized AI complements large models by empowering individuals while preserving the value of centralized, high‑capacity systems.
 </p>
 
-<h3>5. A Learning Opportunity</h3>
+<div class="summary-box">
+  <strong>Summary:</strong> Local AI systems shift control to the user, promote sustainable computing, and open new conversations about how AI should be governed—while still relying on the strengths of large cloud models where appropriate.
+</div>
+<section id="critique">
+
+<h2>Critique of Small-Scale Localized RAG Models</h2>
+
 <p>
-  Building your own system gives you a clear window into how modern AI actually works.
-  It demystifies the black box and helps you understand what retrieval, embeddings, and
-  generation really do.
-  That knowledge is valuable for anyone working in digital media, research, or technology.
+  Despite their advantages, small-scale localized RAG models have several limitations that are important to consider.
+  Computational resource constraints on local hardware can limit model complexity and performance,
+  which may affect the quality and speed of generated outputs.
+  These models can also experience hallucinations—where the system generates plausible but incorrect information—
+  a problem made more noticeable when training data is narrow or limited.[7][8][6]
 </p>
+
+<p>
+  Ethical considerations also come up, such as the risk of embedding biases from the chosen data,
+  or missing important information because the dataset is small.
+  Accessibility can be an issue, since building and maintaining these systems may require technical skills that not all users have.
+  Reproducibility of results may also be difficult, since local environments, data updates, and model settings can vary,
+  making validation and collaborative research more challenging.[8]
+</p>
+
+<p>
+  Addressing these challenges requires ongoing research into model robustness, clear evaluation methods,
+  and user-friendly tools that make localized RAG systems accessible while keeping their benefits.
+</p>
+
+</section>
 
 <hr>
 
 <h2>What This Guide Covers</h2>
 <p>
-  In the next sections, you’ll walk through a full local build — from raw files to a working AI assistant:
+  The following sections provide a comprehensive walkthrough for constructing a fully local retrieval-augmented generation system—from raw data to operational AI assistant:
 </p>
 
 <ol>
-  <li><strong>Select an Embedding Model</strong> — how to represent your data as vectors.</li>
-  <li><strong>Select a Language Model (LLM)</strong> — how to generate answers from retrieved content.</li>
-  <li><strong>Integrate Everything</strong> — connect embeddings, vector store, and model into a functional RAG.</li>
-  <li><strong>Run Queries and Refine</strong> — interact with your AI, test accuracy, and tune performance.</li>
+  <li><strong>Select an Embedding Model</strong> — methodologies for vector representation of textual data.</li>
+  <li><strong>Select a Language Model (LLM)</strong> — techniques for generating responses from retrieved content.</li>
+  <li><strong>Integrate Everything</strong> — connecting embeddings, vector stores, and language models into a cohesive RAG framework.</li>
+  <li><strong>Run Queries and Refine</strong> — interaction with the AI system, accuracy assessment, and performance optimization.</li>
 </ol>
 
 <p>
-  By the end, you’ll understand how to build a self-contained, energy-efficient AI system that
-  learns from your data and lives entirely on your own hardware.
+  Upon completion, readers will have acquired the knowledge to develop a self-contained, energy-efficient AI system
+  that learns from domain-specific data and operates entirely on local hardware.[3][4][5][8]
 </p>
+
+<h2>How to Use This Guide</h2>
+
+<ul>
+  <li>Start with the background sections to understand why localized RAG systems matter.</li>
+  <li>Use the tool-selection and workflow sections to see how a local RAG system is built in practice.</li>
+  <li>Follow the recommended readings and Zotero library to explore sources in more depth.</li>
+</ul>
+
+<h2>Three Accessible Resources to Read Next</h2>
+
+<p>
+  For readers who want to move from orientation to hands-on understanding,
+  the following resources are especially clear, practical, and beginner-friendly.
+  Each offers a different entry point into retrieval-augmented generation without
+  requiring deep theoretical background.
+</p>
+
+<ul>
+  <li>
+    <strong>Smashing Magazine — “A Simple Guide to Retrieval Augmented Generation Language Models” (2024).</strong><br/>
+    A well-illustrated, plain-language explanation of how RAG systems work and
+    why retrieval improves accuracy.
+    <em>Best starting point for conceptual clarity.</em>
+  </li>
+
+  <li>
+    <strong>LearnByBuilding — “A Beginner’s Guide to Building a RAG Application from Scratch.”</strong><br/>
+    Walks through the full RAG pipeline step by step using approachable examples.
+    <em>Best for understanding how the pieces fit together.</em>
+  </li>
+
+  <li>
+    <strong>LangChain Documentation — RAG Tutorials.</strong><br/>
+    Official documentation demonstrating real-world RAG pipelines with clear explanations.
+    <em>Best for hands-on experimentation.</em>
+  </li>
+</ul>
 
 <h2>Overview: How a RAG System Works</h2>
 
 <h3>Step 1: Collect and Prepare Your Data</h3>
-<h3>Step 2: Create Embeddings for Text</h3>
-<h3>Step 3: Store Embeddings in a Vector Database</h3>
-<h3>Step 4: Retrieve Relevant Chunks When You Ask a Question</h3>
-<h3>Step 5: Generate an Answer Using a Language Model</h3>
+<p>
+  Building a RAG system begins with collecting and organizing your documents into clean, machine‑readable text. Consistent formatting improves chunking accuracy and prevents errors in later steps. Removing noise—duplicate headers, stray symbols, or irrelevant metadata—ensures the model has a clear foundation for understanding your material. [10][12]
+</p>
+<p>
+  Clean preparation matters: poor structure leads to weak embeddings and inaccurate retrieval. DigitAI, for example, required removing TEI metadata and restructuring content so that the model received only meaningful text. Careful documentation of preprocessing choices also supports reproducibility.
+</p>
 
-<hr>
+<h3>Step 2: Create Embeddings for Text</h3>
+<p>
+  Next, large documents are broken into “chunks” that capture meaningful units of thought. Chunks that are too large mix topics; chunks that are too small lose context. Most projects perform well with sections of 300–600 words and slight overlaps. [3][5][12]
+</p>
+<p>
+  Chunking makes it possible for the system to compare ideas across your dataset. Humanities datasets often benefit from concept‑aligned chunk boundaries. DigitAI aligned its chunks with TEI rule sections, improving retrieval accuracy at the rule level.
+</p>
+
+<h3>Step 3: Store Embeddings in a Vector Database</h3>
+<p>
+  Each chunk is converted into a numerical vector by your embedding model and stored in a vector database. These vectors capture meaning in a mathematical form, enabling fast similarity comparisons. [7][8]
+</p>
+<p>
+  High‑quality embeddings produce higher‑quality retrieval. DigitAI uses BGE‑M3 due to its semantic accuracy and stability with academic material. Choosing the right embedding model directly affects how the system interprets relationships between concepts.
+</p>
+
+<h3>Step 4: Retrieve Relevant Chunks When a Query Is Issued</h3>
+<p>
+  A vector index must be built to allow fast searching. Saving this index means you can reuse embeddings without regenerating them, reducing both time and energy consumption. [15][3]
+</p>
+<p>
+  Indexing transforms your vector store into a structured, searchable system. DigitAI uses FAISS to achieve near‑instant lookups on modest hardware. Selecting an indexing strategy—flat, IVF, or HNSW—depends on dataset size, but even simple configurations work well for personal projects.
+</p>
+
+<h3>Step 5: Generate an Answer Using a Language Model</h3>
+<p>
+  After retrieving the top‑ranked chunks, the system passes them to a language model, which generates an answer grounded in your documents. This step connects your dataset to the model’s reasoning. [7][8][15]
+</p>
+<p>
+  Reliable retrieval keeps the system anchored to factual information instead of relying on the model's internal training. DigitAI sends FAISS‑ranked TEI rules to the LLM to ensure domain‑accurate output.
+</p>
+
+<h3>Step 6: Prompt the LLM with Retrieved Context</h3>
+<p>
+  The final step builds a structured prompt that includes the retrieved context. Clear prompting significantly reduces hallucinations and keeps the model focused on your text. [6][7][8]
+</p>
+<p>
+  DigitAI uses structured prompts that cite retrieved TEI rules before generating explanations, helping the model behave like a grounded tutor instead of an unconstrained generator.
+</p>
+
+<div class="summary-box">
+  <strong>Summary:</strong> A RAG system works by preparing clean data, embedding it, storing it efficiently, retrieving relevant pieces, and prompting an LLM to generate grounded responses. Each step strengthens accuracy, reliability, and domain alignment.
+</div>
+
 
 <h2>Understanding Each Piece</h2>
 
 <h3>What Is an Embedding Model?</h3>
-<h3>What Is a Vector Store?</h3>
-<h3>What Is a Language Model (LLM)?</h3>
-<h3>How Retrieval and Generation Work Together</h3>
+<p>
+  An <strong>embedding model</strong> converts text into a high-dimensional vector that represents its meaning. These vectors allow the system to measure semantic similarity between documents and queries. Retrieval quality depends heavily on how well embeddings capture relationships between ideas. [7][8][5]
+</p>
+<p>
+  <strong>Technical definition:</strong> Embeddings typically exist in 384–1024‑dimensional vector spaces. Systems evaluate similarity using cosine similarity or dot‑product scoring; cosine similarity is preferred in RAG because it compares direction rather than magnitude, making it ideal for meaning‑based comparison.
+</p>
+<p>
+  <strong>Beginner note:</strong> Think of embeddings as “meaning fingerprints”—two texts with similar meaning produce similar fingerprints.
+</p>
+<p>
+  <strong>Advanced note:</strong> Models such as BGE‑M3 use multi‑task training (contrastive, classification, and instruction objectives) to stabilize semantic similarity across varied datasets, making them well suited for personal RAG systems.
+</p>
 
-<hr>
+<h3>What Is a Vector Store?</h3>
+<p>
+  A <strong>vector store</strong> is a database built for fast similarity search over embeddings. Unlike traditional databases that organize information by words or fields, vector stores operate on numerical meaning representations. [15][3]
+</p>
+<p>
+  <strong>Technical definition:</strong> Vector stores use indexing algorithms such as FAISS Flat, IVF, HNSW, or Product Quantization to reduce search complexity and support millisecond‑scale nearest‑neighbor lookups—even in large collections.
+</p>
+<p>
+  <strong>User-friendly explanation:</strong> A vector store acts like a librarian who organizes documents by meaning rather than alphabet.
+</p>
+<p>
+  <strong>Common choices:</strong><br>
+  • <strong>FAISS</strong> — fastest and most stable for local setups. [15]<br>
+  • <strong>Chroma</strong> — simple Python integration; good for beginners. [15]<br>
+  • <strong>Milvus</strong> — scalable but heavier to run.<br>
+  • <strong>HNSWLib / Annoy</strong> — lightweight approximate‑search options.
+</p>
+<p>
+  For hobbyists and personal projects, FAISS remains the most reliable option.
+</p>
+
+<h3>What Is a Language Model (LLM)?</h3>
+<p>
+  A <strong>language model</strong> takes the retrieved chunks and generates a coherent answer grounded in the provided evidence. The LLM’s reasoning ability determines how well it integrates retrieved material and avoids hallucinations. [16][17][18]
+</p>
+<p>
+  <strong>Technical definition:</strong> LLMs use transformer‑based self‑attention to predict tokens. When provided with retrieval context, they shift from open‑ended generation to constrained, evidence‑guided reasoning.
+</p>
+<p>
+  <strong>Beginner note:</strong> The LLM is the “writer” of the system—it uses the retrieved chunks as research notes.
+</p>
+<p>
+  <strong>Model options:</strong><br>
+  • <strong>Qwen 2.5 (7B–14B)</strong> — excellent reasoning; highly adaptable. [1]<br>
+  • <strong>Mistral 7B</strong> — efficient and fast on low‑VRAM systems. [1]<br>
+  • <strong>Gemma 2 (9B)</strong> — stable and accurate; great grounding. [1]<br>
+  • <strong>LLaMA 3 (8B)</strong> — strong general‑purpose performance. [1]
+</p>
+
+<h3>How Retrieval and Generation Work Together</h3>
+<p>
+  Retrieval narrows the information space to the most relevant documents, while the LLM synthesizes those documents into a final answer. This pairing compensates for standalone LLM weaknesses—particularly hallucination and outdated parametric memory. [7][8]
+</p>
+<p>
+  <strong>Technical detail:</strong> Combining embeddings, retrieval, and generation forms a “bounded‑context reasoning loop.” The LLLM becomes an interpreter of curated data rather than an improviser.
+</p>
+<p>
+  <strong>Why this is powerful:</strong> Grounding lets small, inexpensive models outperform larger general‑purpose LLMs on domain‑specific tasks by anchoring output directly in user‑selected knowledge.
+</p>
+
+<div class="summary-box">
+  <strong>Summary:</strong><br>
+  Embeddings structure meaning.<br>
+  Vector stores organize meaning.<br>
+  LLMs reason over meaning.<br>
+  Together, they form a transparent, customizable workflow suitable for hobbyists, students, and advanced builders.
+</div>
+
 
 <h2>Choosing Your Tools</h2>
 
-<h3>Selecting an Embedding Model</h3>
-<h3>Selecting a Vector Store</h3>
-<h3>Selecting a Local or Open-Source LLM</h3>
+<p>
+  Choosing the right components determines how accurate, responsive, and efficient your local RAG system will be. For individuals and hobbyists, the ideal setup delivers strong semantic understanding while remaining light enough to run on consumer hardware. This section outlines practical, well-supported options for embedding models, vector stores, and local LLMs, explaining the tradeoffs behind each choice. [7][8][5]
+</p>
 
-<hr>
+<h3>Selecting an Embedding Model</h3>
+<p>
+  Embedding models define how your system represents meaning in vector form. High‑quality embeddings improve retrieval by placing semantically related chunks closer together in vector space. The stronger the embedding model, the more precisely the system can evaluate conceptual similarity. [7][8][5]
+</p>
+<p><strong>Definition (Beginner):</strong> An embedding model turns text into a numerical “meaning vector,” letting the system compare ideas mathematically.</p>
+
+<p><strong>BGE‑M3 / BGE‑Small:</strong> Exceptional multilingual semantic accuracy; efficient on CPUs and modest GPUs.<br>
+<strong>Best for:</strong> high‑quality retrieval in most personal systems. [1]</p>
+
+<p><strong>all‑MiniLM‑L6:</strong> Extremely lightweight and fast; English‑only.<br>
+<strong>Best for:</strong> older laptops and minimal‑resource setups. [5][12]</p>
+
+<p><strong>E5 Models:</strong> Trained for ranking relevance; excel in QA‑style retrieval.<br>
+<strong>Best for:</strong> precise academic or analytical datasets. [5][8]</p>
+
+<p><strong>Instructor Models:</strong> Tuned for representing instructions and rule‑based materials.<br>
+<strong>Best for:</strong> conceptual or procedural texts. [5]</p>
+
+<p><strong>Advanced note:</strong> BGE‑M3’s multitask training (contrastive, classification, and instruction tuning) produces especially stable similarity clustering for domain‑specific work.</p>
+
+<h3>Selecting a Vector Store</h3>
+<p>
+  The vector store determines how quickly and accurately the system retrieves relevant chunks. For local builds, users benefit most from tools that combine speed, simplicity, and reliability. [15][3]
+</p>
+
+<p><strong>Definition (Beginner):</strong> A vector store is a database for embeddings. When you ask a question, it finds the closest matching chunk.</p>
+
+<p><strong>FAISS:</strong> Industry‑standard library for similarity search; supports exact and approximate indexing.<br>
+<strong>Best for:</strong> nearly all personal RAG systems. [15][13]</p>
+
+<p><strong>Chroma:</strong> Beginner‑friendly, pure Python, minimal configuration.<br>
+<strong>Best for:</strong> rapid prototyping and straightforward workflows. [15]</p>
+
+<p><strong>Annoy / HNSWLib:</strong> Lightweight approximate nearest‑neighbor tools.<br>
+<strong>Best for:</strong> small datasets or limited‑memory environments. [15]</p>
+
+<p><strong>Advanced note:</strong>
+FAISS Flat performs exact search and is ideal for small–medium local datasets. IVF and HNSW structures are helpful only for much larger collections.</p>
+
+<h3>Selecting a Local or Open‑Source LLM</h3>
+<p>
+  The LLM synthesizes retrieved chunks into fluent, grounded responses. Thanks to retrieval anchoring, small to mid‑sized open‑source models can achieve high accuracy without the compute demands of larger models. [16][17][18]
+</p>
+
+<p><strong>Definition (Beginner):</strong> The LLM is the “writer” of your system—it uses retrieved text as research material.</p>
+
+<p><strong>Qwen 2.5 (7B–14B):</strong> Strong reasoning, excellent grounding, multilingual.<br>
+<strong>Best for:</strong> high‑quality generation on everyday hardware. [1]</p>
+
+<p><strong>Mistral 7B:</strong> Fast and efficient.<br>
+<strong>Best for:</strong> low‑VRAM systems and speed‑critical tasks. [1]</p>
+
+<p><strong>Gemma 2 (9B):</strong> Accurate and stable.<br>
+<strong>Best for:</strong> precision‑focused work. [1]</p>
+
+<p><strong>LLaMA 3 (8B):</strong> Balanced, versatile general‑purpose model.<br>
+<strong>Best for:</strong> broad and creative applications. [1]</p>
+
+<p><strong>Advanced note:</strong> Quantizing models (4‑bit or 8‑bit) allows them to run on limited GPUs or even CPUs, making high‑quality local AI accessible to hobbyists.</p>
+
+<div class="recommended-setup">
+<h3>Our Recommended Configuration</h3>
+<p>
+  For most individuals building a personal RAG system, this configuration provides the strongest balance of simplicity, accuracy, and performance:
+</p>
+<ul>
+  <li><strong>BGE‑M3</strong> for embeddings — multilingual, reliable, and high‑precision. [1]</li>
+  <li><strong>FAISS</strong> for vector search — fast, mature, and ideal for local use. [15]</li>
+  <li><strong>Qwen (7B–14B)</strong> for generation — capable, efficient, and well‑grounded. [1]</li>
+</ul>
+<p>
+  Together, these tools create a stable, high‑quality RAG workflow accessible to hobbyists, students, and solo researchers.
+</p>
+</div>
+
 
 <h2>Building Your RAG Step-by-Step</h2>
 
-<h3>1. Organize Your Documents</h3>
-<h3>2. Split Text into Chunks</h3>
-<h3>3. Generate Embeddings</h3>
-<h3>4. Create and Save the Index</h3>
-<h3>5. Retrieve and Rank the Most Relevant Chunks</h3>
-<h3>6. Prompt the LLM with Retrieved Context</h3>
-<h3>7. Generate and Display the Answer</h3>
+<p>
+  This section outlines the complete workflow for building a local RAG system. Each step introduces both the conceptual reasoning and practical techniques required for a functional, efficient pipeline. The goal is to support beginners while offering enough depth for experienced hobbyists. [3][4][5][8]
+</p>
 
-<hr>
+<h3>1. Organize Your Documents</h3>
+<p>
+  Gather all relevant sources—articles, manuals, transcripts, notes—and convert them into clean, machine‑readable text. Consistency is crucial: irregular formatting, stray markup, or repeated headers can interfere with chunking and embedding. [10][12]
+</p>
+<p><strong>Definition (Beginner):</strong> Machine‑readable text is text the computer can interpret reliably—no broken formatting or inconsistent structure.</p>
+<p><strong>Advanced guidance:</strong> Normalize whitespace, clean metadata, and standardize punctuation. These refinements increase vector clarity and reduce retrieval noise.</p>
+
+<h3>2. Split Text into Chunks</h3>
+<p>
+  Chunking divides large documents into coherent units of meaning. Chunks should capture complete concepts, not arbitrary lengths. Overlapping chunks (10–15%) preserves context between sections. [3][5][12]
+</p>
+<p><strong>Beginner note:</strong> Chunks act like short passages your system can search through.</p>
+<p><strong>Advanced note:</strong> Optimal chunk size depends on context‑window limits and conceptual density. Technical material often benefits from smaller, semantically aligned chunks.</p>
+
+<h3>3. Generate Embeddings</h3>
+<p>
+  Each chunk is fed into your embedding model, producing a numerical representation of meaning. These embeddings let the system compare chunks mathematically. [7][8]
+</p>
+<p>
+  <strong>Practical workflow:</strong><br>
+  • Embed chunks once per dataset update.<br>
+  • Store chunk IDs, titles, and metadata.<br>
+  • Cache embeddings so they don’t need recomputation.
+</p>
+<p><strong>Advanced note:</strong> Higher‑dimensional embeddings (e.g., 1024‑D) offer better meaning separation at the cost of slightly more storage.</p>
+
+<h3>4. Create and Save the Index</h3>
+<p>
+  Load embeddings into your vector store and build an index. Without indexing, the system would need to compare every embedding manually, slowing search substantially. [15][3]
+</p>
+<p><strong>Beginner note:</strong> An index is the structure that enables fast, accurate similarity search.</p>
+<p><strong>Advanced note:</strong> For personal datasets, FAISS Flat (exact search) is typically ideal. IVF and HNSW indexes are useful mainly for very large datasets.</p>
+
+<h3>5. Retrieve and Rank Chunks</h3>
+<p>
+  When a user issues a query, the system embeds the question and compares it against your indexed embeddings. The closest matches—ranked by semantic similarity—form the retrieval set. [7][8][15]
+</p>
+<p>
+  <strong>Technical detail:</strong> Retrieval quality depends on embedding strength, chunking strategy, and indexing method. Tweaking any of these factors affects result precision.
+</p>
+<p><strong>Practical tip:</strong> Retrieving 3–10 chunks typically balances context coverage and noise reduction.</p>
+
+<h3>6. Prompt the LLM with Retrieved Context</h3>
+<p>
+  Construct a prompt that includes both the user’s question and the retrieved chunks. Clear prompt structure anchors the LLM to your sources, reducing hallucinations and maintaining domain accuracy. [6][7][8]
+</p>
+<p><strong>Beginner note:</strong> The prompt is simply instructions plus the retrieved evidence.</p>
+<p>
+  <strong>Advanced note:</strong> Effective prompts often include system instructions, citation rules, safety constraints, and explicit directions to rely solely on retrieved material.
+</p>
+
+<div class="summary-box">
+  <strong>Summary:</strong> A RAG system works by preparing clean data,‬
 
 <h2>Improving and Maintaining Your System</h2>
 
 <h3>Keeping Embeddings Up to Date</h3>
+<p>
+  When you add new documents or make changes, you’ll need to regenerate embeddings to keep the system accurate. In practice, updating embeddings regularly makes sure your AI reflects the latest information and research. [10][12]
+</p>
 <h3>Evaluating Accuracy and Relevance</h3>
+<p>
+  To check output quality, see if the retrieved passages really support the answer. Using metrics like precision, recall, and human review will help you spot areas for improvement. [7][8][9]
+</p>
 <h3>Optimizing Performance and Speed</h3>
+<p>
+  For better performance, consider adjusting chunk size, using GPU acceleration, or trying more efficient indexing methods. These changes can make your system more responsive and pleasant to use. [15][3]
+</p>
 <h3>Running Efficiently to Reduce Power Use</h3>
+<p>
+  Running models with minimal computational overhead saves energy and reduces heat. In many cases, lightweight models and reusing indices help create a more sustainable AI workflow. [14]
+</p>
 
 <hr>
 
 <h2>Next Steps</h2>
 
 <h3>Expanding to New Data Sources</h3>
+<p>
+  Adding more datasets can expand your AI’s knowledge base. When you bring in new data, remember to preprocess, chunk, and generate embeddings to keep quality consistent. [10][12]
+</p>
+
 <h3>Experimenting with Different Models</h3>
+<p>
+  Trying out different embedding and language models lets you compare accuracy, speed, and how well they fit your domain. In practice, benchmarking helps you find the best setup for your needs. [1][5]
+</p>
+
 <h3>Building a Simple Interface</h3>
-<h3>Sharing Your Results and Learnings</h3>
+<p>
+  Creating a user interface—like a command line tool, web dashboard, or chat app—makes the system more accessible. This helps non-technical users interact with your AI more easily. [18]
+</p>
+
+<h3>Sharing Results and Insights</h3>
+<p>
+  Documenting your methods, challenges, and outcomes supports reproducibility and collaboration. Sharing your findings also adds to the wider conversation on localized AI. [8][9]
+</p>
+
+<h2>Using the Zotero Library Behind This Guide</h2>
+
+<p>
+  This resource guide is supported by a public Zotero library that collects
+  all cited materials along with additional readings for deeper exploration.
+  Rather than summarizing every source, this guide highlights key ideas and
+  points readers toward the most useful resources.
+</p>
+
+<p>
+  <strong>Public Zotero Library:</strong>
+  <a href="https://www.zotero.org/groups/6240153/digitai_v2/library" target="_blank" rel="noopener">
+    DigitAI v2 – Localized AI & RAG Systems
+  </a>
+</p>
+
+<p>
+  The Zotero library is maintained as a living collection and may be updated
+  as new research and tools emerge.
+</p>
 
 <h2>Bibliography</h2>
-<iframe
-        src="https://www.zotero.org/groups/6240153/digitai_v2/library"
-        width="100%"
-        height="600"
-        style="border:1px solid #ccc;">
-</iframe>
-
-
+<section id="bibliography">
+  <!-- Citations will be inserted here -->
+  <ol>
+    <li>“Ultimate Guide - The Best Open Source Models for Multilingual Tasks in 2025.” SiliconFlow, https://www.siliconflow.com/articles/en/best-open-source-models-for-multilingual-tasks.</li>
+    <li>Zhi, Li. “Awesome Instruction Tuning.” GitHub, 2025, https://github.com/zhilizju/Awesome-instruction-tuning.</li>
+    <li>“Build a Retrieval Augmented Generation (RAG) App: Part 1.” LangChain Documentation, https://python.langchain.com/docs/tutorials/rag/.</li>
+    <li>“Building an LLM Application.” LlamaIndex Documentation, https://docs.llamaindex.ai/en/stable/understanding/.</li>
+    <li>Devansh. “An Overview of How to Do Retrieval Augmented Generation.” Medium, 2024, https://machine-learning-made-simple.medium.com/an-overview-of-how-to-do-retrieval-augmented-generation-3075292c0bed.</li>
+    <li>Pambou, Joas. “A Simple Guide to Retrieval Augmented Generation Language Models.” Smashing Magazine, 2024, https://www.smashingmagazine.com/2024/01/guide-retrieval-augmented-generation-language-models/.</li>
+    <li>Lewis, Patrick, et al. “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” arXiv, 2021, https://arxiv.org/abs/2005.11401.</li>
+    <li>Gao, Yunfan, et al. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv, 2024, https://arxiv.org/abs/2312.10997.</li>
+    <li>Procko, Tyler, and Omar Ochoa. “Graph Retrieval-Augmented Generation for Large Language Models: A Survey.” SSRN, 2024, https://papers.ssrn.com/abstract=4895062.</li>
+    <li>Chambers, Bill. “A Beginner’s Guide to Building a Retrieval Augmented Generation (RAG) Application from Scratch.” LearnByBuilding, https://learnbybuilding.ai/tutorial/rag-from-scratch.</li>
+    <li>“Tutorials.” LangChain Documentation, https://python.langchain.com/docs/tutorials/.</li>
+    <li>Dey, Mallika. “Understanding Retrieval Augmented Generation (RAG): A Quick Tutorial.” Medium, 2024, https://medium.com/@dey.mallika/understanding-retrieval-augmented-generation-rag-a-quick-tutorial-d9710c005cbe.</li>
+    <li>Tales, Tech. “Building My Own Personal RAG System for PDFs Using Open-Source Models.” Medium, 2025, https://ai.plainenglish.io/building-my-own-personal-rag-system-for-pdfs-using-open-source-models-6f68dd92031d.</li>
+    <li>Correa, Sebastian. “Build Your Private Local RAG for Secure Data (No ChatGPT Needed!).” Medium, 2025, https://scorrea92.medium.com/build-your-private-local-rag-for-secure-data-no-chatgpt-needed-00e3f3ef2c1c.</li>
+    <li>Mistry, Rohan. “A Beginner’s Guide to Vector Databases: Pinecone, FAISS & Chroma Explained.” Medium, 2025, https://medium.com/@rohanmistry231/a-beginners-guide-to-vector-databases-pinecone-faiss-chroma-explained-d4eb3840f7c8.</li>
+    <li>Theobald, Oliver. Machine Learning and AI for Absolute Beginners. Packt Publishing, 2025.</li>
+    <li>Smith, Patrick D. Hands-On Artificial Intelligence for Beginners. Packt Publishing Ltd, 2018.</li>
+    <li>Eckroth, Joshua. Python Artificial Intelligence Projects for Beginners. Packt Publishing, 2018.</li>
+  </ol>
+</section>
 </body>
-
-
-
 </html>
