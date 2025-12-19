@@ -1,0 +1,129 @@
+/* resume.css
+   Purpose: Professional, printable resume layout
+   Scope: resume.html only
+*/
+
+/* Base layout */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+}
+
+/* Header */
+header {
+    margin-bottom: 2.5rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.5;
+}
+
+/* Contact info should stay on one line */
+address {
+    white-space: nowrap;
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 2.5rem;
+}
+
+/* Section headings */
+h2 {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+/* Lists */
+ul {
+    margin: 0.5rem 0 1rem 1.25rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+/* Role header wrapping control (job titles only) */
+section > p:has(+ ul) {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* Resume role grouping */
+section p {
+    margin-left: 0;
+}
+
+section ul {
+    margin-left: 1.5rem;
+}
+
+p + ul {
+    margin-top: 0.4rem;
+}
+
+/* Strong labels (job titles, institutions) */
+strong {
+    font-weight: 600;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Print styles */
+@media print {
+    nav {
+        display: none;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    body {
+        font-size: 11pt;
+    }
+
+    h1 {
+        font-size: 20pt;
+    }
+
+    h2 {
+        font-size: 12pt;
+    }
+}
+
+.cc-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 0.4rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.cc-icons img {
+    height: 20px;
+    width: auto;
+    display: block;
+}

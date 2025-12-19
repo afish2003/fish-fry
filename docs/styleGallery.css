@@ -181,3 +181,18 @@ text-align: center;
 .flex-container > a:hover {
 opacity: 1;
 }
+
+.cc-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 0.4rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.cc-icons img {
+    height: 20px;
+    width: auto;
+    display: block;
+}

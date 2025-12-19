@@ -1,0 +1,90 @@
+/* game.css
+   Purpose: Styling for long‑form web guide assignments
+   Scope: game.html only
+*/
+
+/* Reading layout */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem 5rem;
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Body text */
+p {
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+/* Meta text and captions */
+.meta,
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+}
+
+/* Figures */
+figure {
+    margin: 2.5rem 0;
+}
+
+/* Lists */
+ul,
+ol {
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Embedded media */
+iframe {
+    width: 100%;
+    min-height: 400px;
+    margin: 2rem 0;
+    border: none;
+}
+
+/* Keep navigation visually separated from guide content */
+nav {
+    margin-bottom: 2rem;
+}
+
+.cc-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 0.4rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.cc-icons img {
+    height: 20px;
+    width: auto;
+    display: block;
+}

@@ -1,8 +1,10 @@
 :root {
-    --accent: #9e0057;
-    --bg-light: #ffffff;
-    --bg-soft: #f7f0f5;
-    --text-dark: #111;
+    --bg: #f7f6f3;
+    --bg-soft: #faf9f7;
+    --text: #1c1c1c;
+    --muted: #6b6b6b;
+    --line: #e2e0dc;
+    --accent: #6f7f73;
 }
 
 * {
@@ -15,13 +17,37 @@ html {
 }
 
 body {
-    background: linear-gradient(180deg, #f8d8e8 0%, #faf6f8 100%);
-    font-family: 'Inter', Georgia, serif;
-    color: #222;
-    line-height: 1.6;
-    max-width: 1200px;
+    background: var(--bg);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text);
+    line-height: 1.65;
+}
+
+main {
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 4rem 2rem 4rem;
+}
+
+.hero {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p,
+section > ul,
+section > ol {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    margin-top: 0.75rem;
+}
+
+section {
+    margin-bottom: 4rem;
 }
 
 .skip-link {
@@ -39,67 +65,79 @@ body {
     top: 0;
 }
 
-div {
-    margin: 10px;
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--text);
+    text-shadow: none;
+    padding: 0;
+    margin-bottom: 1rem;
 }
 
 h1 {
-    color: #111;
-    padding: 10px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-shadow: none;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--line);
+    margin: 1.25rem 0 1.75rem;
+}
+
+main > h1::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > h1 {
+    margin-bottom: 0.25rem;
+    text-align: center;
 }
 
 h2 {
-    color: #111;
-    padding: 10px;
-    font-size: 2rem;
-    font-weight: 600;
-    text-shadow: none;
+    font-size: 2.1rem;
+    font-weight: 500;
 }
 
 h3 {
-    color: #111;
-    padding: 10px;
     font-size: 1.5rem;
-    font-weight: 600;
-    text-shadow: none;
+    font-weight: 500;
 }
 
 h4 {
-    color: #111;
-    padding: 10px;
-    font-size: 25px;
-    text-shadow: none;
-}
-
-h5 {
-    color: white;
-    text-shadow: 0px 0px 4px #9e0057;
-    padding: 10px;
-    font-size: 20px;
-}
-
-h6 {
-    color: white;
-    text-shadow: 0px 0px 4px #9e0057;
-    padding: 10px;
-    font-size: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 p {
-    padding: 20px;
+    max-width: 65ch;
+    margin-bottom: 1.5rem;
+}
+
+main > p.lede {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.25rem;
+}
+
+/* Space between Selected Work intro and first project */
+main > p.lede + .project {
+    margin-top: 3.5rem;
 }
 
 a {
-    color: #b21b67;
-    transition: color 0.3s;
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 a:hover,
 a:focus {
-    color: #7e0d48;
+    color: #4f5e54;
     text-decoration: underline;
 }
 
@@ -114,9 +152,12 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(247, 246, 243, 0.9);
     backdrop-filter: blur(6px);
-    border-bottom: 2px solid #9e0057;
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav ul li {
@@ -127,8 +168,10 @@ nav ul li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 20px;
     text-decoration: none;
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: 0.02em;
 }
 
 nav ul li a:hover,
@@ -139,40 +182,20 @@ nav ul li a:focus,
 }
 
 .section {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    padding: 20px;
-    margin: 20px 0;
+    background-color: var(--bg-soft);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 4rem 0;
+    margin: 6rem 0;
+    border-top: 1px solid var(--line);
 }
 
-.section h1 {
-    color: #111;
-    text-shadow: none;
-    padding: 10px 10px 0px 10px;
-    font-size: 40px;
-    font-variant: small-caps;
-    border-bottom: 3px solid #9e0057;
-    padding-bottom: 5px;
-}
-
-.section h2 {
-    color: #111;
-    text-shadow: none;
-    padding: 10px 10px 0px 10px;
-    font-size: 30px;
-    text-decoration: underline;
-}
-
+.section h1,
+.section h2,
 .section h3 {
-    color: #111;
-    text-shadow: none;
-    padding: 10px 10px 0px 10px;
-    font-size: 25px;
-}
-
-.section p {
-    padding: 10px 10px 10px 10px;
+    border: none;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
 }
 
 .section ul {
@@ -180,34 +203,35 @@ nav ul li a:focus,
 }
 
 figure {
-    background-color: white;
-    padding: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
-    box-shadow: 0px 0px 4px #9e0057;
+    background: none;
+    box-shadow: none;
+    max-width: 70%;
+    margin: 4rem auto;
+    padding: 0;
 }
 
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     max-width: 100%;
-    transition: transform 0.3s ease;
+    transition: transform 0.6s ease;
 }
 
 img:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 figcaption {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-top: 0.75rem;
     text-align: center;
-    font-size: 14px;
-    color: #333;
 }
 
 #Iframe {
@@ -231,17 +255,15 @@ figcaption {
     align-items: center;
     max-width: 1000px;
     gap: 10px;
+    margin: 4rem auto;
 }
 
 .flex-container > a {
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 32px;
-    text-shadow: -1px 1px 2px black,
-                 1px 1px 2px black,
-                 1px -1px 2px black,
-                 -1px -1px 2px black;
+    font-size: 1.25rem;
+    background-color: rgba(0,0,0,0.25);
     transition: 0.5s, transform 0.3s ease;
     height: 200px;
     width: 200px;
@@ -252,17 +274,85 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .flex-container > a:hover {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.caption,
+.meta {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+footer {
+    margin-top: 6rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+    text-align: center;
+}
+
+.cc-icons {
+    display: inline-flex;
+    gap: 0.35rem;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
+.cc-icons img {
+    height: 20px;
+    width: auto;
+}
+
+.hero-portrait {
+    margin-bottom: 1.5rem;
+}
+
+.hero-portrait img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Work page meta headings */
+.project {
+    margin-bottom: 3.5rem;
+}
+
+/* Tighten internal spacing on Work page */
+.project h2 {
+    margin-bottom: 0.25rem;
+}
+
+/* Center alignment for Work page */
+.project h2 {
+    text-align: center;
+}
+
+.project .meta {
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.project .meta {
+    text-align: center;
+}
+
+.project + .project {
+    margin-top: 3rem;
+}
+
+.project p {
+    margin-bottom: 0;
 }
